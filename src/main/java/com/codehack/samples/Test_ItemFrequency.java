@@ -1,4 +1,4 @@
-package com.codehack;
+package com.codehack.samples;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -54,5 +54,7 @@ public class Test_ItemFrequency {
     	  System.out.println(
     	    rule.javaAntecedent() + " => " + rule.javaConsequent() + ", " + rule.confidence());
     	}
+    	sc.close();
     }
+    
 }
